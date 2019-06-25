@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		34D8DAF759A95F15CE48B6EA /* Pods_RecipesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FB48F190DF9666CB4DA63B /* Pods_RecipesUITests.framework */; };
 		4EC6ABDA3A34D205035471A5 /* Pods_Recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C50DD4F326FA1391E282EE /* Pods_Recipes.framework */; };
+		B0300FA622C2D0890029FDA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0300FA522C2D0890029FDA9 /* GoogleService-Info.plist */; };
 		B04C6DA722BAE64E00C1CCA3 /* UsernameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04C6DA622BAE64E00C1CCA3 /* UsernameViewModel.swift */; };
 		B04C6DA922BAEFED00C1CCA3 /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04C6DA822BAEFED00C1CCA3 /* PasswordViewModel.swift */; };
 		B04C6DAB22BAF21500C1CCA3 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04C6DAA22BAF21500C1CCA3 /* LoginViewModel.swift */; };
@@ -50,6 +51,7 @@
 		77FB48F190DF9666CB4DA63B /* Pods_RecipesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D97ACD5B46B4D33D4A3B971 /* Pods_RecipesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7125B7A6416CA037E6911EB /* Pods-RecipesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipesUITests.release.xcconfig"; path = "Target Support Files/Pods-RecipesUITests/Pods-RecipesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B0300FA522C2D0890029FDA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B04C6DA622BAE64E00C1CCA3 /* UsernameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameViewModel.swift; sourceTree = "<group>"; };
 		B04C6DA822BAEFED00C1CCA3 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewModel.swift; sourceTree = "<group>"; };
 		B04C6DAA22BAF21500C1CCA3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 		B0C7C4E822BEF673009C7C25 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				B0300FA522C2D0890029FDA9 /* GoogleService-Info.plist */,
 				B064D58622B85742005489E0 /* LaunchScreen.storyboard */,
 				B064D58922B85742005489E0 /* Info.plist */,
 			);
@@ -372,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B064D5AE22B857A5005489E0 /* Login.storyboard in Resources */,
+				B0300FA622C2D0890029FDA9 /* GoogleService-Info.plist in Resources */,
 				B064D58822B85742005489E0 /* LaunchScreen.storyboard in Resources */,
 				B064D58522B85742005489E0 /* Assets.xcassets in Resources */,
 			);
@@ -661,7 +665,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M7A8FW895;
-				INFOPLIST_FILE = Recipes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Recipes/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,7 +684,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5M7A8FW895;
-				INFOPLIST_FILE = Recipes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Recipes/SupportFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
