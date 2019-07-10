@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    var coordinator: ApplicationCoordinator?
+    var coordinator: HomeCoordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
