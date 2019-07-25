@@ -11,6 +11,8 @@ import RxSwift
 import RxCocoa
 
 class LoginViewController: UIViewController {
+    var coordinator: LoginCoordinator?
+    
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
