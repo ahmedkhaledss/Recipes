@@ -24,5 +24,9 @@ class LoginViewController: UIViewController {
 
         usernameTextField.rx.text.bind(to: loginViewModel.usernameViewModel.value)
         .disposed(by: disposeBag)
+        
+        loginButton.rx.tap.subscribe { [weak self] in
+            self?.loginViewModel.login()
+        }.disposed(by: disposeBag)
     }
 }

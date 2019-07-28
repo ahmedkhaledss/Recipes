@@ -13,6 +13,7 @@ import RxCocoa
 class LoginViewModel {
     
     var model: LoginModel
+    var firebaseManager = FirebaseManager()
     private let disposeBag = DisposeBag()
     
     var usernameViewModel = UsernameViewModel()
@@ -46,5 +47,21 @@ class LoginViewModel {
     
     func validateCredentials() -> Bool {
         return usernameViewModel.validate() && passwordViewModel.validate()
+    }
+    
+    func login() {
+        if validateCredentials() {
+            if let username = usernameViewModel.value.value, let password = passwordViewModel.value.value {
+                firebaseManager.login(username: username, password: password, onSuccess: {
+                    //TODO: navigate to home using coordinator
+                    
+                }) { error in
+                    //TODO: display error
+                }
+            }
+        }
+        else {
+            //TODO: display error
+        }
     }
 }

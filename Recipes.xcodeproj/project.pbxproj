@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		34D8DAF759A95F15CE48B6EA /* Pods_RecipesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77FB48F190DF9666CB4DA63B /* Pods_RecipesUITests.framework */; };
 		4EC6ABDA3A34D205035471A5 /* Pods_Recipes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9C50DD4F326FA1391E282EE /* Pods_Recipes.framework */; };
+		B010C48922ECC84F00380C3B /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B010C48822ECC84F00380C3B /* FirebaseManager.swift */; };
 		B01F125D22D55A8B00ED6F8F /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01F125C22D55A8B00ED6F8F /* Splash.storyboard */; };
 		B01F125F22D55A9E00ED6F8F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01F125E22D55A9E00ED6F8F /* SplashViewController.swift */; };
 		B01F126322D55B3400ED6F8F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B01F126222D55B3400ED6F8F /* Home.storyboard */; };
@@ -61,6 +62,7 @@
 		77FB48F190DF9666CB4DA63B /* Pods_RecipesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D97ACD5B46B4D33D4A3B971 /* Pods_RecipesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecipesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7125B7A6416CA037E6911EB /* Pods-RecipesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecipesUITests.release.xcconfig"; path = "Target Support Files/Pods-RecipesUITests/Pods-RecipesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B010C48822ECC84F00380C3B /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		B01F125C22D55A8B00ED6F8F /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		B01F125E22D55A9E00ED6F8F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		B01F126222D55B3400ED6F8F /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -144,6 +146,14 @@
 				A7125B7A6416CA037E6911EB /* Pods-RecipesUITests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B010C48722ECC81400380C3B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B010C48822ECC84F00380C3B /* FirebaseManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		B01F125B22D55A7500ED6F8F /* Splash */ = {
@@ -242,6 +252,7 @@
 				B064D5B322B85A82005489E0 /* Model */,
 				B064D5B222B85A6D005489E0 /* ViewModel */,
 				B064D5B122B85A1D005489E0 /* View */,
+				B010C48722ECC81400380C3B /* Service */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -576,6 +587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B010C48922ECC84F00380C3B /* FirebaseManager.swift in Sources */,
 				B064D5B522B85AA5005489E0 /* LoginModel.swift in Sources */,
 				B079689822D4A7ED0055F695 /* StoryboardName.swift in Sources */,
 				B04C6DA922BAEFED00C1CCA3 /* PasswordViewModel.swift in Sources */,
