@@ -35,6 +35,8 @@
 		B079689A22D4EC970055F695 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B079689922D4EC970055F695 /* Coordinator.swift */; };
 		B079689D22D4ED0B0055F695 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B079689C22D4ED0B0055F695 /* ApplicationCoordinator.swift */; };
 		D9FF08665641E4CB630DDE2E /* Pods_RecipesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D97ACD5B46B4D33D4A3B971 /* Pods_RecipesTests.framework */; };
+		EF0E60CF22EB63E900F19302 /* RecipesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0E60CE22EB63E900F19302 /* RecipesListViewController.swift */; };
+		EFA7945722EA67ED00515BD0 /* OffersPagerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA7945622EA67ED00515BD0 /* OffersPagerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,8 @@
 		B079689C22D4ED0B0055F695 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		D9C50DD4F326FA1391E282EE /* Pods_Recipes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Recipes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E05522FAED544EE614573B3F /* Pods-Recipes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Recipes.debug.xcconfig"; path = "Target Support Files/Pods-Recipes/Pods-Recipes.debug.xcconfig"; sourceTree = "<group>"; };
+		EF0E60CE22EB63E900F19302 /* RecipesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesListViewController.swift; sourceTree = "<group>"; };
+		EFA7945622EA67ED00515BD0 /* OffersPagerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OffersPagerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +190,7 @@
 			children = (
 				B01F126222D55B3400ED6F8F /* Home.storyboard */,
 				B01F126422D55B4400ED6F8F /* HomeViewController.swift */,
+				EF0E60CE22EB63E900F19302 /* RecipesListViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 		B064D57922B85741005489E0 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				EFA7945522EA662C00515BD0 /* Custom views */,
 				B0C7C4E922BEF6AD009C7C25 /* Modules */,
 				B079689B22D4ECD90055F695 /* Coordinators */,
 				B0F2F97222D4A22300D2B9C3 /* Utilities */,
@@ -363,6 +369,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		EFA7945522EA662C00515BD0 /* Custom views */ = {
+			isa = PBXGroup;
+			children = (
+				EFA7945622EA67ED00515BD0 /* OffersPagerView.xib */,
+			);
+			path = "Custom views";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -477,6 +491,7 @@
 				B01F126322D55B3400ED6F8F /* Home.storyboard in Resources */,
 				B01F125D22D55A8B00ED6F8F /* Splash.storyboard in Resources */,
 				B064D58522B85742005489E0 /* Assets.xcassets in Resources */,
+				EFA7945722EA67ED00515BD0 /* OffersPagerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +606,7 @@
 				B064D5B522B85AA5005489E0 /* LoginModel.swift in Sources */,
 				B079689822D4A7ED0055F695 /* StoryboardName.swift in Sources */,
 				B04C6DA922BAEFED00C1CCA3 /* PasswordViewModel.swift in Sources */,
+				EF0E60CF22EB63E900F19302 /* RecipesListViewController.swift in Sources */,
 				B064D5B022B857BA005489E0 /* LoginViewController.swift in Sources */,
 				B04C6DA722BAE64E00C1CCA3 /* UsernameViewModel.swift in Sources */,
 				B01F126522D55B4400ED6F8F /* HomeViewController.swift in Sources */,

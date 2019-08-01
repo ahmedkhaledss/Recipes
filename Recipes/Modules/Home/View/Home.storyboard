@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,5 +25,78 @@
             </objects>
             <point key="canvasLocation" x="425" y="-191"/>
         </scene>
+        <!--Recipes List View Controller-->
+        <scene sceneID="ccB-lK-YN0">
+            <objects>
+                <viewController id="MmL-2D-eB4" userLabel="Recipes List View Controller" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YhL-9F-sMw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wGc-qW-4gO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="Z64-di-on4">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recipesImg" translatesAutoresizingMaskIntoConstraints="NO" id="Iaa-UZ-sRM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipes you can make" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pZC-nI-NxL">
+                                            <rect key="frame" x="16" y="-3.5" width="269" height="31.5"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Iaa-UZ-sRM" secondAttribute="trailing" id="Cc3-Ys-sek"/>
+                                        <constraint firstAttribute="bottom" secondItem="Iaa-UZ-sRM" secondAttribute="bottom" id="KOt-Xt-9mt"/>
+                                        <constraint firstItem="Iaa-UZ-sRM" firstAttribute="top" secondItem="Z64-di-on4" secondAttribute="top" id="KS3-90-0Rf"/>
+                                        <constraint firstAttribute="bottom" secondItem="pZC-nI-NxL" secondAttribute="bottom" constant="16" id="Vku-Fq-bnr"/>
+                                        <constraint firstItem="Iaa-UZ-sRM" firstAttribute="leading" secondItem="Z64-di-on4" secondAttribute="leading" id="p0J-VV-SJe"/>
+                                        <constraint firstItem="pZC-nI-NxL" firstAttribute="leading" secondItem="Z64-di-on4" secondAttribute="leading" constant="16" id="x1m-qc-uHR"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="vH7-tK-75P" style="IBUITableViewCellStyleDefault" id="jwG-cZ-alq">
+                                        <rect key="frame" x="0.0" y="72" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jwG-cZ-alq" id="GHf-VR-q0l">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vH7-tK-75P">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="79.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kS9-7k-a1M" firstAttribute="bottom" secondItem="wGc-qW-4gO" secondAttribute="bottom" id="A9u-5B-z4v"/>
+                            <constraint firstItem="kS9-7k-a1M" firstAttribute="trailing" secondItem="wGc-qW-4gO" secondAttribute="trailing" id="QXG-bW-92g"/>
+                            <constraint firstItem="wGc-qW-4gO" firstAttribute="leading" secondItem="kS9-7k-a1M" secondAttribute="leading" id="dPb-OK-7BE"/>
+                            <constraint firstItem="wGc-qW-4gO" firstAttribute="top" secondItem="kS9-7k-a1M" secondAttribute="top" id="vem-mC-0mu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kS9-7k-a1M"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KI4-wm-21X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1122" y="-193"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="recipesImg" width="1200" height="660"/>
+    </resources>
 </document>
